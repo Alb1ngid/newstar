@@ -1,0 +1,7 @@
+venv
+.idea
+__pycache__\
+.vs
+ls.py
+main2.py
+main.py

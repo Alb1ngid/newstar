@@ -8,6 +8,7 @@ LASER_SPEED = 5
 ENEMY_SPEED = 1
 ENEMY_DISTANCE = 50
 
+
 class MillenniumFalcon(arcade.Sprite):
     def __init__(self):
         super().__init__('falcon.png', 0.3)
@@ -30,7 +31,6 @@ class Lazer(arcade.Sprite):
         self.center_y += self.change_y
         if self.center_y > SCREEN_HEIGHT:
             self.kill()
-
 
 class TieFighter(arcade.Sprite):
     def __init__(self):
@@ -124,7 +124,6 @@ class Game(arcade.Window):
             if dead_end or self.fails > 3:
                 self.game = False
                 self.fails = 5
-
 
 
 window = Game(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
