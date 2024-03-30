@@ -2,6 +2,7 @@ venv
 .idea
 __pycache__\
 .vs
-ls.py
 main2.py
 main.py
+star.py
+star2.py
